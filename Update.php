@@ -58,13 +58,13 @@
   
    
 if(isset($_POST['done'])){
-    $id=$_GET['id'];
+    // $id=$_GET['id'];
 
-    $show="SELECT * FROM `info` WHERE Sr.no={$id}";
+    // $show="SELECT * FROM `info` WHERE Sr.no={$id}";
 
-    $showdata=mysqli_query($conn,$show);
+    // $showdata=mysqli_query($conn,$show);
 
-    $data=mysqli_fetch_array($showdata);
+    // $data=mysqli_fetch_array($showdata);
 
     $fname=$_POST['fname'];
     $lname=$_POST['lname'];
@@ -83,30 +83,30 @@ if(isset($_POST['done'])){
 ?>
             <div class="mb-3">
                 <label for="fname" class="form-label">First Name</label>
-                <input type="text" value="<?php echo $data['First Name'] ;?>" class="form-control" name="fname"
+                <input type="text" value="" class="form-control" name="fname"
                     id="fname" aria-describedby="emailHelp" >
             </div>
             <div class="mb-3">
                 <label for="lname" class="form-label">Last Name</label>
-                <input type="text" value="<?php echo $arrdata['Last Name']?>" class="form-control" name="lname"
+                <input type="text" value="" class="form-control" name="lname"
                     id="lname" aria-describedby="emailHelp" required>
 
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" value="<?php echo $arrdata['email']?>" class="form-control" name="email" id="email"
+                <input type="email" value="" class="form-control" name="email" id="email"
                     aria-describedby="emailHelp" required>
 
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
-                <input type="text" value="<?php echo $arr['phone']?>" class="form-control" name="phone" id="phone"
+                <input type="text" value="" class="form-control" name="phone" id="phone"
                     aria-describedby="emailHelp" required>
 
             </div>
             <div class="mb-3">
                 <label for="gender" class="form-label">Gender</label>
-                <input type="text" value="<?php echo $arr['gender']?>" class="form-control" name="gender" id="gender"
+                <input type="text" value="" class="form-control" name="gender" id="gender"
                     aria-describedby="emailHelp" required>
 
             </div>
@@ -116,7 +116,7 @@ if(isset($_POST['done'])){
             </div> -->
             <div class="mb-3">
                 <label for="address" class="form-label">Address</label>
-                <input type="text" class="form-control" value="<?php echo $arr['address']?>" name="address" id="address"
+                <input type="text" class="form-control" value="" name="address" id="address"
                     aria-describedby="emailHelp" required>
             </div>
 
